@@ -1,0 +1,29 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.hiya.com/changelog
+versioning:
+  scheme: uri-path
+  versions_seen: [v1, v2]
+  audio_intel_scheme: calendar
+  audio_intel_example: 2026.04.r1p0
+  docs: https://developer.hiya.com/docs/getting-started/introduction
+changelog:
+  url: https://developer.hiya.com/changelog
+  feeds:
+    atom: https://developer.hiya.com/changelog/atom.xml
+    rss: https://developer.hiya.com/changelog/rss.xml
+  artifact: changelog/hiya-changelog.yml
+deprecation:
+  policy_url: null
+  sunset_header: unknown
+  detail: >-
+    No public deprecation policy or RFC 8594 Sunset/Deprecation header support
+    was found. The Android client SDK exposes a HiyaServiceRetiredException,
+    indicating retirement is signaled to SDK clients.
+sla:
+  url: null
+  uptime_target: null
+status_page: null
+status_page_note: >-
+  No public status page was found (status.hiya.com did not resolve).
+deprecated_operations: []

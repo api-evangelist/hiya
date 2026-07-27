@@ -1,0 +1,49 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.hiya.com/changelog
+feeds:
+  atom: https://developer.hiya.com/changelog/atom.xml
+  rss: https://developer.hiya.com/changelog/rss.xml
+scheme:
+  audio_intel: calendar (YYYY.MM.rN[pN])
+  connect: calendar (YYYY.MM-pN)
+current:
+  audio_intel: 2026.04.r1p0
+entries:
+- date: '2026-05-26'
+  product: protect
+  title: New cache endpoints — Branded Phones and Profile Phones
+  highlights:
+  - Added GET /v1/caches/phones Profile Phones Cache returning a country-specific gzipped TSV combining reputation level, reputation category, and display data.
+  - New Branded Phones cache endpoint for partner distribution.
+  url: https://developer.hiya.com/changelog/2026/05/26/protect
+- date: '2026-04-14'
+  product: audio-intelligence
+  title: Audio Intelligence 2026.04.r1p0
+  url: https://developer.hiya.com/changelog/2026/04/14/audio-intelligence
+- date: '2026-03-24'
+  product: audio-intelligence
+  title: Audio Intelligence 2026.03.r2
+  url: https://developer.hiya.com/changelog/2026/03/24/audio-intelligence
+- date: '2026-03-10'
+  product: audio-intelligence
+  title: Audio Intelligence 2026.03.r1p0
+  url: https://developer.hiya.com/changelog/2026/03/10/audio-intelligence
+- date: '2026-02-23'
+  product: audio-intelligence
+  title: Audio Intelligence 2026.02.r1p0
+  url: https://developer.hiya.com/changelog/2026/02/23/audio-intelligence
+- date: '2025-11-04'
+  product: audio-intelligence
+  title: Audio Intelligence 2025.11.r1p0
+  url: https://developer.hiya.com/changelog/2025/11/04/audio-intelligence
+- date: '2025-06-26'
+  product: connect
+  title: Connect Changelog 2025.06-p0
+  highlights:
+  - Rewording and new support for Managed Brand operations.
+  url: https://developer.hiya.com/changelog/2025/06/26/connect
+- date: '2025-04-01'
+  product: audio-intelligence
+  title: Audio Intelligence 2025.04.r1p0
+  url: https://developer.hiya.com/changelog/2025/04/01/audio-intelligence

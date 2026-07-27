@@ -1,20 +1,108 @@
 aid: hiya
-name: hiya
-description: hiya is a company surfaced as a portfolio company of balderton-capital and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+name: Hiya
+description: >-
+  Hiya is an AI-native voice security company that blocks spam, fraud, and
+  deepfake calls at network scale for mobile operators, enterprises, and
+  consumers. Its developer platform exposes several REST APIs: Hiya Connect for
+  branded outbound calling (registering originating numbers, managing branded
+  phone numbers, logos, and managed brands), Hiya Protect for spam and scam
+  reputation (business partner reputation submission, spammer and profile-phone
+  caches, and voice scam protection reporting), Hiya Audio Intelligence for
+  audio-based authenticity, identity, and voiceprint verification (deepfake and
+  synthetic-voice detection), and the Hiya AI Voice Platform for call logs,
+  contacts, relations, notifications, and an AI voice assistant. APIs are served
+  over HTTPS from api.hiya.com with HTTP Basic authentication using an App ID and
+  App Secret (bearer tokens for Audio Intelligence), plus iOS and Android mobile
+  SDKs for embedding caller ID and protection in apps.
 url: https://raw.githubusercontent.com/api-evangelist/hiya/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://developer.hiya.com/img/logo.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - balderton-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profile
+x-tier-reason: enriched-from-developer-portal
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Voice Security
+- Caller ID
+- Branded Calling
+- Spam Protection
+- Scam Protection
+- Deepfake Detection
+- Voice Authentication
+- Telecommunications
+- Call Analytics
+apis:
+- name: Hiya Connect API
+  description: >-
+    Branded calling API to register outbound originating numbers, manage Connect
+    phone numbers and managed brands, upload and manage brand logos, and read
+    branded-phones cache and billing analytics so business calls display the
+    company name, logo, and call reason.
+  humanURL: https://developer.hiya.com/docs/connect/branding/endpoints/v-1-register-outbound-call
+  baseURL: https://api.hiya.com
+  tags:
+  - Branded Calling
+  - Caller ID
+  properties:
+  - type: Documentation
+    url: https://developer.hiya.com/docs/connect/branding/endpoints/v-1-register-outbound-call
+- name: Hiya Protect API
+  description: >-
+    Spam and scam protection API covering the business partner reputation
+    surface (register businesses and phones, query reputation), spammer and
+    profile-phone caches distributed as country-specific gzipped TSV, and voice
+    scam protection session reporting.
+  humanURL: https://developer.hiya.com/docs/protect/cache/endpoints/v-1-get-profile-phones-cache
+  baseURL: https://api.hiya.com
+  tags:
+  - Spam Protection
+  - Reputation
+  properties:
+  - type: Documentation
+    url: https://developer.hiya.com/docs/protect/cache/endpoints/v-1-get-profile-phones-cache
+- name: Hiya Audio Intelligence API
+  description: >-
+    Audio-based authenticity, identity, and voiceprint verification API for
+    detecting deepfakes and synthetic voices, managing audios, identities,
+    identity/message/authenticity verifications, API keys, org stats, and wallet.
+  humanURL: https://developer.hiya.com/docs/audio-intel/introduction
+  baseURL: https://api.hiya.com/audiointel
+  tags:
+  - Deepfake Detection
+  - Voice Authentication
+  properties:
+  - type: Documentation
+    url: https://developer.hiya.com/docs/audio-intel/introduction
+- name: Hiya AI Voice Platform API
+  description: >-
+    AI voice assistant and call management API for call logs, contacts,
+    relations, user accounts and preferences, notification tokens, call
+    feedback, assistant voices, number profiles, and a live-calls websocket.
+  humanURL: https://developer.hiya.com/docs/ai-voice-platform/introduction
+  baseURL: https://api.hiya.com
+  tags:
+  - AI Voice Assistant
+  - Call Management
+  properties:
+  - type: Documentation
+    url: https://developer.hiya.com/docs/ai-voice-platform/introduction
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -23,3 +111,50 @@ maintainers:
 common:
 - type: Website
   url: https://hiya.com/
+- type: DeveloperPortal
+  url: https://developer.hiya.com/
+- type: Documentation
+  url: https://developer.hiya.com/docs/getting-started/introduction
+- type: APIReference
+  url: https://developer.hiya.com/docs/getting-started/introduction
+- type: GettingStarted
+  url: https://developer.hiya.com/docs/getting-started/introduction
+- type: Guides
+  url: https://developer.hiya.com/docs/guides/voice-protection/introduction
+- type: ChangeLog
+  url: https://developer.hiya.com/changelog
+- type: Blog
+  url: https://hiya.com/blog
+- type: GitHubOrganization
+  url: https://github.com/hiyainc
+- type: Support
+  url: https://hiya.com/support
+- type: PrivacyPolicy
+  url: https://hiya.com/privacy
+- type: TermsOfService
+  url: https://hiya.com/terms-of-service
+- type: MobileSDK
+  url: https://developer.hiya.com/docs/mobile-sdk-docs/getting-started
+- type: Authentication
+  url: authentication/hiya-authentication.yml
+- type: Conventions
+  url: conventions/hiya-conventions.yml
+- type: Lifecycle
+  url: lifecycle/hiya-lifecycle.yml
+- type: ChangeLog
+  url: changelog/hiya-changelog.yml
+- type: Sandbox
+  url: sandbox/hiya-sandbox.yml
+- type: Packages
+  url: packages/hiya-packages.yml
+- type: SDKs
+  url: packages/hiya-packages.yml
+- type: DomainSecurity
+  url: security/hiya-domain-security.yml
+- type: LLMsTxt
+  url: llms/hiya-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

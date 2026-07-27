@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.hiya.com/docs/mobile-sdk-docs/getting-started
+docs: https://developer.hiya.com/docs/mobile-sdk-docs/getting-started
+notes: >-
+  Hiya publishes first-party mobile SDKs (Android and iOS) for embedding caller
+  ID and call protection in consumer apps. Distribution is not via public
+  registries: Hiya provides access to its SDK repository and authentication keys
+  during onboarding. No public npm / PyPI / Maven Central / RubyGems / crates.io
+  server-side client libraries were found; the company GitHub org (github.com/hiyainc)
+  has no public repositories.
+packages:
+- language: kotlin
+  platform: android
+  name: Hiya Android Client SDK (com.hiya.client.callerid)
+  registry: hiya-private
+  url: https://developer.hiya.com/docs/mobile-sdk-docs/android/client-sdk/changelog
+  official: true
+  access: partner-onboarding
+  description: >-
+    Android caller ID / call protection SDK. Package namespace
+    com.hiya.client.callerid.*; distributed via Hiya's private SDK repository.
+- language: swift
+  platform: ios
+  name: Hiya iOS Client SDK
+  registry: hiya-private
+  url: https://developer.hiya.com/docs/mobile-sdk-docs/getting-started
+  official: true
+  access: partner-onboarding
+  description: >-
+    iOS caller ID / call protection SDK; distributed via Hiya's private SDK
+    repository during onboarding.

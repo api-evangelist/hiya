@@ -1,0 +1,58 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.hiya.com/docs/getting-started/introduction
+docs: https://developer.hiya.com/docs/getting-started/introduction
+conventions:
+  base_urls:
+    host: https://api.hiya.com
+    audio_intel: https://api.hiya.com/audiointel/{region}/v1
+    notes: >-
+      Audio Intelligence base URL is region-scoped (a {region} path segment).
+      Connect, Protect, and AI Voice Platform operations are served from
+      api.hiya.com under versioned paths.
+  authentication:
+    style: http-basic-and-bearer
+    header: Authorization
+    detail: >-
+      HTTP Basic (base64 AppID:AppSecret) for Connect / Protect / AI Voice
+      Platform; bearer tokens for Audio Intelligence. See
+      authentication/hiya-authentication.yml.
+  content_type:
+    encoding: UTF-8
+    detail: All Hiya APIs return content in UTF-8.
+  versioning:
+    style: uri-path
+    versions_seen: [v1, v2]
+    detail: >-
+      Endpoints are versioned in the path (e.g. /v1/originators,
+      /v2/managed-brands, /audiointel/{region}/v1). Audio Intelligence releases
+      use a calendar version scheme (e.g. 2026.04.r1p0).
+  environments:
+    modes: [test, production]
+    detail: >-
+      Separate Test and Production credential pairs; App ID carries an
+      environment prefix (e.g. PROD_). Test keys do not affect analytics or
+      billing. See sandbox/hiya-sandbox.yml.
+  streaming:
+    websocket: true
+    detail: >-
+      The AI Voice Platform exposes a live-calls websocket (ws-v-1-live-calls);
+      Audio Intelligence exposes streaming authenticity verification.
+  bulk_distribution:
+    detail: >-
+      Hiya Protect caches (spammer cache, profile-phones cache, branded-phones
+      cache) are distributed as country-specific gzipped TSV files rather than
+      per-record JSON.
+  idempotency:
+    supported: unknown
+    detail: No idempotency-key header is documented in the public reference.
+  pagination:
+    detail: >-
+      List endpoints exist across APIs (list managed brands, list audios, list
+      verifications); pagination parameters are documented per endpoint in the
+      API reference.
+cross_links:
+  authentication: authentication/hiya-authentication.yml
+  lifecycle: lifecycle/hiya-lifecycle.yml
+  changelog: changelog/hiya-changelog.yml
+  sandbox: sandbox/hiya-sandbox.yml

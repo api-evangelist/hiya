@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://developer.hiya.com/docs/getting-started/introduction
+docs: https://developer.hiya.com/docs/getting-started/introduction
+test_vs_live:
+  model: separate-credential-pairs
+  detail: >-
+    Hiya issues separate Test and Production App ID / App Secret pairs. The App
+    ID carries an environment prefix (e.g. PROD_SampleApp for production). Test
+    keys do not affect analytics or billing; production keys should never be used
+    in development environments.
+  key_prefix: 'PROD_'
+console:
+  url: https://developer.hiya.com/select-console
+  detail: >-
+    A self-service Console lets developers obtain and manage Test and Production
+    keys; keys can also be requested by contacting Hiya.
+test_values:
+  published: false
+  detail: >-
+    No fixed magic test phone numbers or fixture values are published in the
+    public documentation; test behavior is driven by using Test credentials
+    rather than special identifiers.
