@@ -1,4 +1,4 @@
-# hiya
+# Hiya
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,6 +64,96 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-hiya is a company surfaced as a portfolio company of balderton-capital and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Hiya is an AI-native voice security company that blocks spam, fraud, and deepfake calls at network scale for mobile operators, enterprises, and consumers. Its developer platform exposes several REST APIs: Hiya Connect for branded outbound calling (registering originating numbers, managing branded phone numbers, logos, and managed brands), Hiya Protect for spam and scam reputation (business partner reputation submission, spammer and profile-phone caches, and voice scam protection reporting), Hiya Audio Intelligence for audio-based authenticity, identity, and voiceprint verification (deepfake and synthetic-voice detection), and the Hiya AI Voice Platform for call logs, contacts, relations, notifications, and an AI voice assistant. APIs are served over HTTPS from api.hiya.com with HTTP Basic authentication using an App ID and App Secret (bearer tokens for Audio Intelligence), plus iOS and Android mobile SDKs for embedding caller ID and protection in apps.
 
-Backed by: balderton-capital — https://hiya.com/
+**Areas:** Company · Voice Security · Caller ID · Branded Calling · Spam Protection · Scam Protection · Deepfake Detection · Voice Authentication · Telecommunications · Call Analytics
+
+## Hiya on APIs.io
+
+Everything profiled for Hiya is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/hiya/](https://apis.io/providers/hiya/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Hiya Connect API](https://apis.io/apis/hiya/hiya-connect-api/) — Branded calling API to register outbound originating numbers, manage Connect phone numbers and managed brands, upload and manage brand logos, and read…
+- [Hiya Protect API](https://apis.io/apis/hiya/hiya-protect-api/) — Spam and scam protection API covering the business partner reputation surface (register businesses and phones, query reputation), spammer and profile-phone…
+- [Hiya Audio Intelligence API](https://apis.io/apis/hiya/hiya-audio-intelligence-api/) — Audio-based authenticity, identity, and voiceprint verification API for detecting deepfakes and synthetic voices, managing audios, identities,…
+- [Hiya AI Voice Platform API](https://apis.io/apis/hiya/hiya-ai-voice-platform-api/) — AI voice assistant and call management API for call logs, contacts, relations, user accounts and preferences, notification tokens, call feedback, assistant…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Hiya Authentication](https://apis.io/security/hiya/hiya-authentication/)
+- [Hiya Domain Security](https://apis.io/security/hiya/hiya-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://hiya.com/)
+- [Documentation](https://developer.hiya.com/docs/getting-started/introduction)
+- [Getting started](https://developer.hiya.com/docs/getting-started/introduction)
+- [API reference](https://developer.hiya.com/docs/getting-started/introduction)
+- [Support](https://hiya.com/support)
+- [Changelog](https://developer.hiya.com/changelog)
+- [Blog](https://hiya.com/blog)
+- [Terms of service](https://hiya.com/terms-of-service)
+- [Privacy policy](https://hiya.com/privacy)
+- [GitHub](https://github.com/hiyainc)
+
+## API Evangelist rating
+
+**Kin Score 28.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 78.6 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 71.4 |
+| Access clarity | 21.1 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.1** — Telecommunications
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/hiya/](https://apis.io/providers/hiya/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Hiya: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/hiya/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
